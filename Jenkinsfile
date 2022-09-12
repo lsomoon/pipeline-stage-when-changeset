@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				changeset pattern: "*.js"
+				changeset glob : "*.js"
 			}
 		
             steps {                
